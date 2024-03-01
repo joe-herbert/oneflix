@@ -8,3 +8,4 @@ To do:
 - Install, update and uninstall pages on website
 - Enable/disable with keyboard extension and button in extension popup
 - Support for other streaming sites
+- Package and publish for chrome
