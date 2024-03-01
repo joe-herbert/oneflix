@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Oneflix",
+    "version": "1.0",
+    "description": "Only allows you to watch one netflix episode at a time",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.netflix.com/*",
+                "*://*.netflix.ca/*",
+                "*://*.netflix.net/*",
+                "*://*.netflix.com.au/*"
+            ],
+            "js": ["oneflix.js"]
+        }
+    ]
+}
