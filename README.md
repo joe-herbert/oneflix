@@ -1,5 +1,5 @@
 # oneflix
-Stop Netflix binging by only letting you watch one episode at a time
+Chrome extension to stop Netflix binging by only letting you watch one episode at a time
 
 Firefox doesn't work - waiting on `window.navigation` support.
 
