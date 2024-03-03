@@ -3,6 +3,11 @@
     "name": "Oneflix",
     "version": "1.0",
     "description": "Only allows you to watch one netflix episode at a time",
+    "icons": {
+        "48": "icons/icon48.png",
+        "96": "icons/icon96.png",
+        "128": "icons/icon128.png"
+    },
     "content_scripts": [
         {
             "matches": [
