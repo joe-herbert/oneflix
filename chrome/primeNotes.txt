@@ -1,0 +1,24 @@
+                "*://*.primevideo.com/*",
+                "*://*.amazon.co.uk/*",
+                "*://*.amazon.ca/*",
+                "*://*.amazon.cn/*",
+                "*://*.amazon.co.jp/*",
+                "*://*.amazon.com/*",
+                "*://*.amazon.com.au/*",
+                "*://*.amazon.com.mx/*",
+                "*://*.amazon.de/*",
+                "*://*.amazon.es/*",
+                "*://*.amazon.eu/*",
+                "*://*.amazon.fr/*",
+                "*://*.amazon.in/*",
+                "*://*.amazon.it/*",
+                "*://*.amazon.nl/*",
+                "*://*.amazon.sa/*"
+
+
+        } else if (
+            (window.location.href.includes("amazon") &&
+                event.destination.url.includes("amazon")) ||
+            (window.location.href.includes("prime") &&
+                event.destination.url.includes("prime"))
+        ) {

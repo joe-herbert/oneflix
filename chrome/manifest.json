@@ -14,7 +14,8 @@
                 "*://*.netflix.com/*",
                 "*://*.netflix.ca/*",
                 "*://*.netflix.net/*",
-                "*://*.netflix.com.au/*"
+                "*://*.netflix.com.au/*",
+                "*://*.disneyplus.com/*"
             ],
             "js": ["oneflix.js"]
         }
