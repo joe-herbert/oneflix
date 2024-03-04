@@ -16,3 +16,4 @@ If the extension doesn't work on either of these then please [email me](mailto:j
 -   Install, update and uninstall pages on website
 -   Enable/disable with keyboard extension and button in extension popup
 -   Support for other streaming sites
+-   Allow setting number of episodes left to watch within extension popup
