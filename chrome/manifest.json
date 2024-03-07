@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Oneflix",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Only allows you to watch one Netflix or Disney+ episode at a time",
     "icons": {
         "48": "icons/icon48.png",
