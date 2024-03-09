@@ -12,7 +12,7 @@
     <div id="container1" class="centered">
         <h1>
             <img src="imgs/fullLogo.svg" alt="Oneflix" class="logo">
-            <h2>End Netflix binging once and for all</h2>
+            <h2>End binging once and for all</h2>
         </h1>
         <br>
         <!--<a href="FIREFOXLINK" target="_blank" class="removeForOnboard" id="addOnLink-firefox">Get it for Firefox</a>-->

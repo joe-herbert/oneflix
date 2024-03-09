@@ -7,13 +7,12 @@ Firefox doesn't work - waiting on [`window.navigation`](https://developer.mozill
 ## Works for:
 
 -   Netflix
--   Disney Plus
+-   Disney+
 
 If the extension doesn't work on either of these then please [email me](mailto:joe@joeherbert.dev?subject=Oneflix).
 
 ## To do:
 
 -   Install, update and uninstall pages on website
--   Enable/disable with keyboard extension and button in extension popup
 -   Support for other streaming sites
--   Allow setting number of episodes left to watch within extension popup
+-   Allow setting time range to auto enable/disable extension
