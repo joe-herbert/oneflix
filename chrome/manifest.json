@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Oneflix",
-    "version": "1.2",
+    "version": "1.3",
     "description": "Only allows you to watch one Netflix or Disney+ episode at a time",
     "icons": {
         "48": "icons/icon48.png",
@@ -10,18 +10,23 @@
     },
     "content_scripts": [
         {
-            "matches": [
-                "*://*.netflix.com/*",
-                "*://*.netflix.ca/*",
-                "*://*.netflix.net/*",
-                "*://*.netflix.com.au/*",
-                "*://*.disneyplus.com/*"
-            ],
+            "matches": ["<all_urls>"],
             "js": ["oneflix.js"]
         }
     ],
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": []
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["storage"],
+    "commands": {
+        "toggle-enabled": {
+            "suggested_key": {
+                "default": "Shift+Alt+O"
+            },
+            "description": "Toggle enabled/disabled"
+        }
+    }
 }

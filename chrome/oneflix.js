@@ -1,4 +1,4 @@
-let firstWatch = true;
+let watched = -1;
 
 window.navigation.addEventListener("navigate", (event) => {
     if (event.canIntercept) {
@@ -15,11 +15,35 @@ window.navigation.addEventListener("navigate", (event) => {
             watchString = "video";
         }
 
-        if (window.location.href.includes(watchString) && event.destination.url.includes(watchString) && differentEpisodes) {
-            if (!firstWatch) {
-                chrome.runtime.sendMessage({ closeTab: true });
-            }
-            firstWatch = false;
+        if (watchString && window.location.href.includes(watchString) && event.destination.url.includes(watchString) && differentEpisodes) {
+            chrome.storage.sync.get(["toWatch", "enabled"], (values) => {
+                if (values.enabled === undefined) {
+                    chrome.storage.sync.set({ enabled: true });
+                    values.enabled = true;
+                }
+                if (values.enabled) {
+                    watched++;
+                    if (values.toWatch === undefined) {
+                        chrome.storage.sync.set({ toWatch: 1 });
+                        values.toWatch = 1;
+                    }
+                    if (watched >= values.toWatch) {
+                        watched = -1;
+                        chrome.runtime.sendMessage({ closeTab: true });
+                    }
+                }
+            });
         }
+    }
+});
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    switch (request.type) {
+        case "toWatchChange":
+            chrome.storage.sync.set({ toWatch: request.value });
+            break;
+        case "enabledChange":
+            chrome.storage.sync.set({ enabled: request.value });
+            break;
     }
 });

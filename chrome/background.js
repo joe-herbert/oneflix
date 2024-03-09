@@ -5,3 +5,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         return true;
     }
 });
+
+chrome.commands.onCommand.addListener((command) => {
+    if (command === "toggle-enabled") {
+        chrome.storage.sync.get("enabled", (values) => {
+            chrome.storage.sync.set({ enabled: !values.enabled });
+        });
+    }
+});
