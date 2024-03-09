@@ -44,7 +44,7 @@
         </form>
     </div>
     <div>
-        Didn't mean to uninstall? Reinstall for <!--<a href="FIREFOXLINK" target="_blank">firefox</a> or --><a href="CHROMELINK" target="_blank">chrome</a>.
+        Didn't mean to uninstall? Reinstall for <!--<a href="FIREFOXLINK" target="_blank">firefox</a> or --><a href="https://chromewebstore.google.com/detail/oneflix/mkdljjcpkdmnpnecoenmcblbamiofeph" target="_blank">chrome</a>.
     </div>
 </body>
 

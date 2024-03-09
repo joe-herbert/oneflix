@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Oneflix</title>
+        <style>
+            html {
+                width: 300px;
+            }
+            body {
+                width: 100%;
+            }
+            html,
+            body {
+                margin: 0;
+                background-color: black;
+                color: #eee;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+            img {
+                width: 80%;
+                margin: 0 auto 5px;
+                display: block;
+            }
+            #sliderText {
+                position: relative;
+                left: 15px;
+                top: 20px;
+            }
+            input[type="number"] {
+                padding: 10px;
+                width: 70px;
+                margin-left: 10px;
+                display: inline-block;
+            }
+            label.toWatch {
+                margin-top: 15px;
+                display: block;
+            }
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+            }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+                border-radius: 34px;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+                border-radius: 50%;
+            }
+
+            input:checked + .slider {
+                background-color: #b0060f;
+            }
+
+            input:focus + .slider {
+                box-shadow: 0 0 1px #b0060f;
+            }
+
+            input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://chromewebstore.google.com/detail/oneflix/mkdljjcpkdmnpnecoenmcblbamiofeph" target="_blank"
+            ><img src="icons/fullLogo.svg"
+        /></a>
+        <label class="switch">
+            <input type="checkbox" id="enabled" checked />
+            <span class="slider"></span>
+        </label>
+        <span id="sliderText">Oneflix Enabled</span>
+        <br />
+        <label class="toWatch"
+            >Episodes to watch:
+            <input type="number" value="1" id="toWatch" />
+        </label>
+        <script src="popup.js"></script>
+    </body>
+</html>
