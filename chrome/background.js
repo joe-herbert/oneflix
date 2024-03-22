@@ -13,3 +13,9 @@ chrome.commands.onCommand.addListener((command) => {
         });
     }
 });
+
+chrome.runtime.onInstalled.addListener(function (details) {
+    if (details.reason === "install") {
+        chrome.storage.sync.set({ toWatch: 1, enabled: true });
+    }
+});
