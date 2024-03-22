@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Oneflix",
-    "version": "1.4",
+    "version": "1.5",
     "description": "Prevents binging by allowing you to limit the number of Netflix or Disney+ episodes you can watch at a time.",
     "icons": {
         "48": "icons/icon48.png",
