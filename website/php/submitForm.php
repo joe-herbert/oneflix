@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 $reason = trim($_REQUEST["reason"]);
 $browser = urldecode($_REQUEST["browser"]);
 
-$sql = "INSERT INTO `joeherbe_oneflix`.`uninstallFeedback` (`reason`, `browser`) VALUES ('$reason', '$browser')";
+$sql = "INSERT INTO `joeherbe_extensions`.`uninstallFeedback` (`reason`, `browser`, `extension`) VALUES ('$reason', '$browser', 'oneflix')";
 if ($conn->query($sql) === TRUE) {
 	echo "Success";
 } else {
