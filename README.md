@@ -14,5 +14,5 @@ If the extension doesn't work on either of these then please [email me](mailto:j
 ## To do:
 
 -   Install, update and uninstall pages on website
--   Support for other streaming sites
+-   Support for other streaming sites - BBC iPlayer, Prime
 -   Allow setting time range to auto enable/disable extension
