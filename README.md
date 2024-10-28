@@ -1,6 +1,6 @@
 ![](logo/fullLogo.svg)
-
-Chrome extension to stop binging by only letting you watch one episode at a time
+[
+Chrome extension](https://chromewebstore.google.com/detail/oneflix/mkdljjcpkdmnpnecoenmcblbamiofeph) to stop binging by only letting you watch one episode at a time
 
 Firefox doesn't work - waiting on [`window.navigation`](https://developer.mozilla.org/en-US/docs/Web/API/Window/navigation#browser_compatibility) support.
 
