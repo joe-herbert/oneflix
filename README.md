@@ -8,8 +8,11 @@ Firefox doesn't work - waiting on [`window.navigation`](https://developer.mozill
 
 -   Netflix
 -   Disney+
+-   BBC iPlayer
 
-If the extension doesn't work on either of these then please [email me](mailto:joe@joeherbert.dev?subject=Oneflix).
+If the extension doesn't work on any of these then please [email me](mailto:joe@joeherbert.dev?subject=Oneflix).
+
+If you'd like to request support for any other streaming services then please [email me](mailto:joe@joeherbert.dev?subject=New%20Streaming%20Service%20Support%20Request&body=Please%20add%20support%20for%3A%20).
 
 ## To do:
 

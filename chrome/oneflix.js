@@ -26,6 +26,8 @@ window.navigation.addEventListener("navigate", (event) => {
             }
         } else if (window.location.href.includes("disney") && event.destination.url.includes("disney")) {
             watchStrings = ["video", "play"];
+        } else if (window.location.href.includes("iplayer") && event.destination.url.includes("iplayer")) {
+            watchStrings = ["episode/"];
         }
 
         if (
