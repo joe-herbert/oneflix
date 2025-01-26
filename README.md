@@ -17,5 +17,5 @@ If you'd like to request support for any other streaming services then please [e
 ## To do:
 
 -   Install, update and uninstall pages on website
--   Support for other streaming sites - BBC iPlayer, Prime
+-   Support for other streaming sites - Prime, Hulu, Max, Peacock, Paramount+, maybe YouTube?
 -   Allow setting time range to auto enable/disable extension
